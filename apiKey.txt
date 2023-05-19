@@ -1,0 +1,16 @@
+API Key :- VWHooiuAy8nxKXLNgxkKxH4WO
+API Key Secret :- I235BbcmNWjTUDxF9N9laeibIXoj63CH3AdJVHV9RhZRZz6EqT
+----------------------
+Bearer Token :- AAAAAAAAAAAAAAAAAAAAAAAhngEAAAAAHi9%2FcComXd8DvRjrRELWWLlyyIM%3DnrXFWYldnV7okXp9jPEAR4bLk6XlKYzlUqnQtZwkkpr0IsTkKE
+----------------------
+Access Token :- 4824307551-aEmoiqa0UogVnq8RF05Qjn7iZcIq8ihUHhWkem6
+Access Token Secret :- nvwcP5uAuvSrMFEiJjEBw6rU2s1RZqrRiZFAD5IKZwslh
+
+----------------------
+
+require "vendor/autoload.php";
+
+use Abraham\TwitterOAuth\TwitterOAuth;
+----------------------
+$connection = new TwitterOAuth(CONSUMER_KEY, CONSUMER_SECRET, $access_token, $access_token_secret);
+$content = $connection->get("account/verify_credentials");
