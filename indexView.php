@@ -52,9 +52,9 @@
                         <td><?php echo !empty($viewVars['vchFriends_count']) ? $viewVars['vchFriends_count'] : ' -- ' ?></td>
                         <td><?php echo !empty($viewVars['vchFavourites_count']) ? $viewVars['vchFavourites_count'] : ' -- ' ?></td>
                         <?php if(!empty($viewVars['intTwitterVerified']) == 0){ ?>
-                            <td style="color: red; font-weight: bold;   "><?php echo !empty($viewVars['intTwitterVerified'] == 0) ? 'Not Verified' : ' Verified ' ?></td>
+                            <td style="color: red; font-weight: bold;"> Not Verified </td>
                         <?php }else{?>
-                            <td style="color: green; font-weight: bold;   "><?php echo !empty($viewVars['intTwitterVerified'] == 0) ? 'Not Verified' : ' Verified ' ?></td>
+                            <td style="color: green; font-weight: bold;"> Verified </td>
                         <?php }?>
                         <td><img src="<?php echo $viewVars['twitterProfile_image_url']?>" alt="Profile image" title="Profile Image" style="height: 49px; width: 50px; border-radius: 50%;"></td>
                         <td><img src="<?php echo $viewVars['twiterProfile_banner_url']?>" alt="banner Image" title="banner Image" style="height: 49px; width: 50px; border-radius: 50%;"></td>
